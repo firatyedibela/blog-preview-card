@@ -1,24 +1,4 @@
-@font-face {
-  font-family: 'Figtree';
-  src: url('./assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
-}
-
-$gray-950: rgb(17, 17, 17);
-$gray-500: rgb(107, 107, 107);
-$main-yellow: rgb(244, 208, 78);
-
-@mixin text-style($font-weight, $font-size, $color) {
-  font-family: 'Figtree';
-  font-weight: $font-weight;
-  font-size: $font-size;
-  color: $color;
-  line-height: 1.5;
-}
-
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import './base';
+@import './components';
+@import './mixins';
+@import './variables';

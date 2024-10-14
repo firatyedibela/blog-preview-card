@@ -1,0 +1,61 @@
+article {
+  max-width: 384px;
+  padding: 24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  font-family: Figtree;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 20px;
+  box-shadow: 8px 8px;
+  box-sizing: border-box;
+
+  & > img {
+    border-radius: 10px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+.category {
+  @include text-style(14px, 800, $gray-950);
+
+  background-color: $main-yellow;
+  border-radius: 4px;
+  padding: 4px 12px;
+  align-self: flex-start;
+}
+
+.date {
+  @include text-style(14px, 500, $gray-950);
+}
+
+.title {
+  @include text-style(24px, 800, $gray-950);
+}
+
+.description {
+  @include text-style(16px, 500, $gray-500);
+}
+
+.author {
+  @include text-style(14px, 800, $gray-950);
+}
+
+footer {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+
+  img {
+    width: 32px;
+    height: 32px;
+  }
+}

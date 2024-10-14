@@ -1,12 +1,9 @@
-import './app.scss';
+import './scss/main.scss';
+import Card from './components/Card';
+import cardData from './data/cardData';
 
 function App() {
-  return (
-    <>
-      <p className="p1">This is paragraph one</p>
-      <p className="p2">Paragraph 2 is also here </p>
-    </>
-  );
+  return <Card {...cardData}></Card>;
 }
 
 export default App;
