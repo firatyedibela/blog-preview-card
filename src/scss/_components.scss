@@ -45,11 +45,12 @@ article {
   @include text-style(12, 14, 500, $gray-950);
 }
 
-.title {
+.link {
   @include text-style(20, 24, 800, $gray-950);
+  text-decoration: none;
 }
 
-.title:hover {
+.link:hover {
   cursor: pointer;
   color: $main-yellow;
 }

@@ -12,7 +12,9 @@ function Card(props) {
           <span>{props.category}</span>
         </div>
         <p className="date">Published {props.date}</p>
-        <h2 className="title">{props.title}</h2>
+        <a href="" className="link">
+          {props.title}
+        </a>
         <p className="description">{props.description}</p>
       </div>
       <footer>
