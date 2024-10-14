@@ -26,7 +26,6 @@ Users should be able to:
 
 - Desktop Design
   ![Desktop Design](public/screenshots/desktop.png)
-
 - Mobile Design
   ![Mobile Design](public/screenshots/mobile.png)
 
