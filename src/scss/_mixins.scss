@@ -1,8 +1,14 @@
-@mixin text-style($font-size, $font-weight, $color) {
+@mixin text-style($font-size-min, $font-size-max, $font-weight, $color) {
   font-family: 'Figtree';
   font-weight: $font-weight;
-  font-size: $font-size;
   color: $color;
   line-height: 1.5;
   letter-spacing: 0px;
+
+  // Calculate the vw value for the font size
+  // We're finding what percentage is $font-size-max of 1440. For example, if the font size is 24px in 1440px wide screens, the vw-value will be 1.67 and by providing that 1.67 to clamp function as the ideal value, we make sure that the max font size is reached at 1440px wide screen and when the screen width goes lower than 1440px, font size starts to shrink until the $font-size-min value
+  // This ensures a smooth transition of font size from font-size-max at 1440px to font-size-min at smaller widths
+  $vw-value: calc($font-size-max / 1440 * 100);
+
+  font-size: clamp(#{$font-size-min}px, #{$vw-value}vw, #{$font-size-max}px);
 }
