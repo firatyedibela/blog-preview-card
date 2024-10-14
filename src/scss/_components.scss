@@ -1,6 +1,6 @@
 article {
   padding: 24px;
-  width: 384px;
+  max-width: 384px;
 
   display: flex;
   flex-direction: column;
@@ -28,7 +28,7 @@ article {
 
 @media (max-width: 375px) {
   article {
-    width: 327px;
+    max-width: 327px;
   }
 }
 
