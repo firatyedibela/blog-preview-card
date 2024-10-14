@@ -49,6 +49,11 @@ article {
   @include text-style(20, 24, 800, $gray-950);
 }
 
+.title:hover {
+  cursor: pointer;
+  color: $main-yellow;
+}
+
 .description {
   @include text-style(14, 16, 500, $gray-500);
 }
