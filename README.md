@@ -24,11 +24,11 @@ Users should be able to:
 
 ### Screenshot
 
--Desktop Design
-![Desktop Design](public/screenshots/desktop.png)
+- Desktop Design
+  ![Desktop Design](public/screenshots/desktop.png)
 
--Mobile Design
-![Mobile Design](public/screenshots/mobile.png)
+- Mobile Design
+  ![Mobile Design](public/screenshots/mobile.png)
 
 ### Links
 
