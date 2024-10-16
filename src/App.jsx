@@ -3,7 +3,11 @@ import Card from './components/Card';
 import cardData from './data/cardData';
 
 function App() {
-  return <Card {...cardData}></Card>;
+  return (
+    <main className="container">
+      <Card {...cardData}></Card>
+    </main>
+  );
 }
 
 export default App;
